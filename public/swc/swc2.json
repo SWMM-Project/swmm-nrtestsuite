@@ -1,0 +1,17 @@
+{
+    "name": "swc2",
+    "version": "1.0",
+    "description": "",
+    "args": [
+        "swc2.inp",
+        "swc2.rpt",
+        "swc2.out"
+    ],
+    "input_files": [
+        "swc2.inp"
+    ],
+    "output_files": {
+        "swc2.rpt": "swmm report",
+        "swc2.out": "swmm allclose"
+    }
+}

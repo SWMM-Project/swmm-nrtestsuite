@@ -1,0 +1,17 @@
+{
+    "name": "swc8",
+    "version": "1.0",
+    "description": "",
+    "args": [
+        "swc8.inp",
+        "swc8.rpt",
+        "swc8.out"
+    ],
+    "input_files": [
+        "swc8.inp"
+    ],
+    "output_files": {
+        "swc8.rpt": "swmm report",
+        "swc8.out": "swmm allclose"
+    }
+}

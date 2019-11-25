@@ -1,0 +1,17 @@
+{
+    "name": "swc17",
+    "version": "1.0",
+    "description": "",
+    "args": [
+        "swc17.inp",
+        "swc17.rpt",
+        "swc17.out"
+    ],
+    "input_files": [
+        "swc17.inp"
+    ],
+    "output_files": {
+        "swc17.rpt": "swmm report",
+        "swc17.out": "swmm allclose"
+    }
+}

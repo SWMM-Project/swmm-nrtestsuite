@@ -1,0 +1,17 @@
+{
+    "name": "swc14",
+    "version": "1.0",
+    "description": "",
+    "args": [
+        "swc14.inp",
+        "swc14.rpt",
+        "swc14.out"
+    ],
+    "input_files": [
+        "swc14.inp"
+    ],
+    "output_files": {
+        "swc14.rpt": "swmm report",
+        "swc14.out": "swmm allclose"
+    }
+}

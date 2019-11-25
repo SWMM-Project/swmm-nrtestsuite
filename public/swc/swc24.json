@@ -1,0 +1,17 @@
+{
+    "name": "swc24",
+    "version": "1.0",
+    "description": "",
+    "args": [
+        "swc24.inp",
+        "swc24.rpt",
+        "swc24.out"
+    ],
+    "input_files": [
+        "swc24.inp"
+    ],
+    "output_files": {
+        "swc24.rpt": "swmm report",
+        "swc24.out": "swmm allclose"
+    }
+}

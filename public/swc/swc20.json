@@ -1,0 +1,17 @@
+{
+    "name": "swc20",
+    "version": "1.0",
+    "description": "",
+    "args": [
+        "swc20.inp",
+        "swc20.rpt",
+        "swc20.out"
+    ],
+    "input_files": [
+        "swc20.inp"
+    ],
+    "output_files": {
+        "swc20.rpt": "swmm report",
+        "swc20.out": "swmm allclose"
+    }
+}
