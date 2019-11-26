@@ -8,7 +8,8 @@
         "swc3.out"
     ],
     "input_files": [
-        "swc3.inp"
+        "swc3.inp",
+        "ny304174.dat"
     ],
     "output_files": {
         "swc3.rpt": "swmm report",

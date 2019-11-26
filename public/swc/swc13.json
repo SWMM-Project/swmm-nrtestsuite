@@ -8,7 +8,8 @@
         "swc13.out"
     ],
     "input_files": [
-        "swc13.inp"
+        "swc13.inp",
+        "wa457938.dat"
     ],
     "output_files": {
         "swc13.rpt": "swmm report",

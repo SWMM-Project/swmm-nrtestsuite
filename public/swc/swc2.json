@@ -8,7 +8,8 @@
         "swc2.out"
     ],
     "input_files": [
-        "swc2.inp"
+        "swc2.inp",
+        "ga090444.dat"
     ],
     "output_files": {
         "swc2.rpt": "swmm report",

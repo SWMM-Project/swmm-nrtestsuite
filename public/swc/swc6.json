@@ -8,7 +8,8 @@
         "swc6.out"
     ],
     "input_files": [
-        "swc6.inp"
+        "swc6.inp",
+        "ia134101.dat"
     ],
     "output_files": {
         "swc6.rpt": "swmm report",

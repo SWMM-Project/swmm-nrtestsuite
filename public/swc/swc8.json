@@ -8,7 +8,8 @@
         "swc8.out"
     ],
     "input_files": [
-        "swc8.inp"
+        "swc8.inp",
+        "tx415408.dat"
     ],
     "output_files": {
         "swc8.rpt": "swmm report",
