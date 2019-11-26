@@ -1,0 +1,17 @@
+{
+    "name": "swc23",
+    "version": "1.0",
+    "description": "",
+    "args": [
+        "swc23.inp",
+        "swc23.rpt",
+        "swc23.out"
+    ],
+    "input_files": [
+        "swc23.inp"
+    ],
+    "output_files": {
+        "swc23.rpt": "swmm report",
+        "swc23.out": "swmm allclose"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "swc11",
+    "version": "1.0",
+    "description": "",
+    "args": [
+        "swc11.inp",
+        "swc11.rpt",
+        "swc11.out"
+    ],
+    "input_files": [
+        "swc11.inp",
+        "wa457938.dat"
+    ],
+    "output_files": {
+        "swc11.rpt": "swmm report",
+        "swc11.out": "swmm allclose"
+    }
+}

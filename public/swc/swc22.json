@@ -1,0 +1,17 @@
+{
+    "name": "swc22",
+    "version": "1.0",
+    "description": "",
+    "args": [
+        "swc22.inp",
+        "swc22.rpt",
+        "swc22.out"
+    ],
+    "input_files": [
+        "swc22.inp"
+    ],
+    "output_files": {
+        "swc22.rpt": "swmm report",
+        "swc22.out": "swmm allclose"
+    }
+}
