@@ -1,0 +1,17 @@
+{
+    "name": "swc18",
+    "version": "1.0",
+    "description": "",
+    "args": [
+        "swc18.inp",
+        "swc18.rpt",
+        "swc18.out"
+    ],
+    "input_files": [
+        "swc18.inp"
+    ],
+    "output_files": {
+        "swc18.rpt": "swmm report",
+        "swc18.out": "swmm allclose"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "swc13",
+    "version": "1.0",
+    "description": "",
+    "args": [
+        "swc13.inp",
+        "swc13.rpt",
+        "swc13.out"
+    ],
+    "input_files": [
+        "swc13.inp",
+        "wa457938.dat"
+    ],
+    "output_files": {
+        "swc13.rpt": "swmm report",
+        "swc13.out": "swmm allclose"
+    }
+}

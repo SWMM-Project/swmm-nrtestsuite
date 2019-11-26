@@ -1,0 +1,18 @@
+{
+    "name": "swc12",
+    "version": "1.0",
+    "description": "",
+    "args": [
+        "swc12.inp",
+        "swc12.rpt",
+        "swc12.out"
+    ],
+    "input_files": [
+        "swc12.inp",
+        "wa457938.dat"
+    ],
+    "output_files": {
+        "swc12.rpt": "swmm report",
+        "swc12.out": "swmm allclose"
+    }
+}

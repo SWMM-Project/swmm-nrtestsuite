@@ -1,0 +1,17 @@
+{
+    "name": "swc19",
+    "version": "1.0",
+    "description": "",
+    "args": [
+        "swc19.inp",
+        "swc19.rpt",
+        "swc19.out"
+    ],
+    "input_files": [
+        "swc19.inp"
+    ],
+    "output_files": {
+        "swc19.rpt": "swmm report",
+        "swc19.out": "swmm allclose"
+    }
+}

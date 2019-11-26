@@ -1,0 +1,17 @@
+{
+    "name": "swc21",
+    "version": "1.0",
+    "description": "",
+    "args": [
+        "swc21.inp",
+        "swc21.rpt",
+        "swc21.out"
+    ],
+    "input_files": [
+        "swc21.inp"
+    ],
+    "output_files": {
+        "swc21.rpt": "swmm report",
+        "swc21.out": "swmm allclose"
+    }
+}
