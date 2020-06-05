@@ -18,7 +18,7 @@
  REPORT_STEP           00:10:00
  WET_STEP              00:15:00
  DRY_STEP              01:00:00
- ROUTING_STEP          0:01:00 
+ ROUTING_STEP          0:01:00
  ALLOW_PONDING         NO
  INERTIAL_DAMPING      NONE
  VARIABLE_STEP         0.00
@@ -26,7 +26,7 @@
  MIN_SURFAREA          0
  NORMAL_FLOW_LIMITED   BOTH
  SKIP_STEADY_STATE     NO
- THREADS               1
+ ;THREADS               1
 
 [OUTFALLS]
 ;;                 Invert     Outfall    Stage/Table      Tide
@@ -38,29 +38,29 @@
 ;;                 Invert   Max.     Init.    Shape      Shape                      Ponded   Evap.
 ;;Name             Elev.    Depth    Depth    Curve      Parameters                 Area     Frac.
 ;;------------------------------------------------------------------------------------------------
-  401              50       50       1        FUNCTIONAL 0        0        2000     0        0       
-  301              100      50       1        FUNCTIONAL 0        0        2000     0        0       
+  401              50       50       1        FUNCTIONAL 0        0        2000     0        0
+  301              100      50       1        FUNCTIONAL 0        0        2000     0        0
 
 [CONDUITS]
 ;;                 Inlet            Outlet                      Manning    Inlet      Outlet     Init.      Maximum
 ;;Name             Node             Node             Length     N          Height     Height     Flow       Flow
 ;;------------------------------------------------------------------------------------------------------------------------
-  100              301              201              1000       0.015      20         0          0          0         
+  100              301              201              1000       0.015      20         0          0          0
 
 [PUMPS]
 ;;                 Inlet            Outlet           Pump             Initial
-;;Name             Node             Node             Curve            Status 
+;;Name             Node             Node             Curve            Status
 ;;---------------------------------------------------------------------------
-  90002            401              301              PumpCurve        OFF   
-  90003            401              301              PumpCurve        OFF   
-  90004            401              301              PumpCurve        OFF   
-  90005            401              301              PumpCurve        OFF   
-  90006            401              301              PumpCurve        OFF   
+  90002            401              301              PumpCurve        OFF
+  90003            401              301              PumpCurve        OFF
+  90004            401              301              PumpCurve        OFF
+  90005            401              301              PumpCurve        OFF
+  90006            401              301              PumpCurve        OFF
 
 [XSECTIONS]
 ;;Link             Type         Geom1      Geom2      Geom3      Geom4      Barrels
 ;;---------------------------------------------------------------------------------
-  100              CIRCULAR     4          0          0          0          1         
+  100              CIRCULAR     4          0          0          0          1
 
 [CONTROLS]
 RULE 90002A
@@ -115,24 +115,24 @@ THEN PUMP 90006 STATUS = OFF
 
 [INFLOWS]
 ;;                                                   Concen   Conversion
-;;Node             Parameter        Time Series      /Mass    Factor    
+;;Node             Parameter        Time Series      /Mass    Factor
 ;;----------------------------------------------------------------------
-  401              FLOW             INFLOW                            
+  401              FLOW             INFLOW
 
 [CURVES]
-;;Name             Type       X-Value    Y-Value   
+;;Name             Type       X-Value    Y-Value
 ;;-------------------------------------------------
-  PumpCurve        Pump3      50         100       
-  PumpCurve                   60         50        
-  PumpCurve                   70         10        
+  PumpCurve        Pump3      50         100
+  PumpCurve                   60         50
+  PumpCurve                   70         10
 
 [TIMESERIES]
-;;Name             Date       Time       Value     
+;;Name             Date       Time       Value
 ;;-------------------------------------------------
-  INFLOW                      0          0         
-  INFLOW                      0.5        50        
-  INFLOW                      1          100       
-  INFLOW                      5          100       
+  INFLOW                      0          0
+  INFLOW                      0.5        50
+  INFLOW                      1          100
+  INFLOW                      5          100
 
 [REPORT]
 INPUT      NO
@@ -144,23 +144,23 @@ LINKS ALL
 [TAGS]
 
 [MAP]
- DIMENSIONS      0.00             0.00             10000.00         10000.00        
+ DIMENSIONS      0.00             0.00             10000.00         10000.00
  UNITS           None
 
 [COORDINATES]
 ;;Node             X-Coord          Y-Coord
-  201              9394.57          6242.17         
-  401              1691.02          3465.55         
-  301              5887.27          6242.17         
+  201              9394.57          6242.17
+  401              1691.02          3465.55
+  301              5887.27          6242.17
 
 [VERTICES]
 ;;Link             X-Coord          Y-Coord
-  90002            1649.27          6075.16         
-  90002            4279.75          6096.03         
-  90003            1670.15          5365.34         
-  90003            4488.52          5427.97         
-  90004            1691.02          4697.29         
-  90004            4572.03          4739.04         
-  90005            1691.02          4133.61         
-  90005            4655.53          4217.12         
-  90006            4739.04          3569.94         
+  90002            1649.27          6075.16
+  90002            4279.75          6096.03
+  90003            1670.15          5365.34
+  90003            4488.52          5427.97
+  90004            1691.02          4697.29
+  90004            4572.03          4739.04
+  90005            1691.02          4133.61
+  90005            4655.53          4217.12
+  90006            4739.04          3569.94
