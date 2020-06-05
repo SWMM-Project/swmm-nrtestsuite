@@ -1,3 +1,3 @@
-# swmm-nrtests
+# swmm-nrtestsuite
 
-swmm numerical regression tests
+swmm numerical regression test suite
