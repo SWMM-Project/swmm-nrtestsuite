@@ -1,0 +1,17 @@
+{
+    "name": "onsag_curb_inlet_12",
+    "version": "1.0",
+    "description": "",
+    "args": [
+        "onsag_curb_inlet_12.inp",
+        "onsag_curb_inlet_12.rpt", 
+        "onsag_curb_inlet_12.out"
+    ],
+    "input_files": [
+        "onsag_curb_inlet_12.inp"
+    ],
+    "output_files": {
+        "onsag_curb_inlet_12.rpt": "swmm report",
+        "onsag_curb_inlet_12.out": "swmm allclose"
+    }
+}
