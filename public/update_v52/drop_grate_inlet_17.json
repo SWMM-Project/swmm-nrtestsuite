@@ -1,0 +1,17 @@
+{
+    "name": "drop_grate_inlet_17",
+    "version": "1.0",
+    "description": "",
+    "args": [
+        "drop_grate_inlet_17.inp",
+        "drop_grate_inlet_17.rpt", 
+        "drop_grate_inlet_17.out"
+    ],
+    "input_files": [
+        "drop_grate_inlet_17.inp"
+    ],
+    "output_files": {
+        "drop_grate_inlet_17.rpt": "swmm report",
+        "drop_grate_inlet_17.out": "swmm allclose"
+    }
+}
