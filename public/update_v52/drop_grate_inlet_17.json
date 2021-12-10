@@ -2,9 +2,10 @@
     "name": "drop_grate_inlet_17",
     "version": "1.0",
     "description": "",
+    "minimum_app_version": "5.2.0",
     "args": [
         "drop_grate_inlet_17.inp",
-        "drop_grate_inlet_17.rpt", 
+        "drop_grate_inlet_17.rpt",
         "drop_grate_inlet_17.out"
     ],
     "input_files": [

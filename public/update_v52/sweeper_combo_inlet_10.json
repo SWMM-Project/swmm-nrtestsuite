@@ -2,9 +2,10 @@
     "name": "sweeper_combo_inlet_10",
     "version": "1.0",
     "description": "",
+    "minimum_app_version": "5.2.0",
     "args": [
         "sweeper_combo_inlet_10.inp",
-        "sweeper_combo_inlet_10.rpt", 
+        "sweeper_combo_inlet_10.rpt",
         "sweeper_combo_inlet_10.out"
     ],
     "input_files": [

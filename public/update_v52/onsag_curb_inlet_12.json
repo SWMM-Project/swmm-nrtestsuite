@@ -2,9 +2,10 @@
     "name": "onsag_curb_inlet_12",
     "version": "1.0",
     "description": "",
+    "minimum_app_version": "5.2.0",
     "args": [
         "onsag_curb_inlet_12.inp",
-        "onsag_curb_inlet_12.rpt", 
+        "onsag_curb_inlet_12.rpt",
         "onsag_curb_inlet_12.out"
     ],
     "input_files": [

@@ -2,9 +2,10 @@
     "name": "street_grate_inlet_7",
     "version": "1.0",
     "description": "",
+    "minimum_app_version": "5.2.0",
     "args": [
         "street_grate_inlet_7.inp",
-        "street_grate_inlet_7.rpt", 
+        "street_grate_inlet_7.rpt",
         "street_grate_inlet_7.out"
     ],
     "input_files": [

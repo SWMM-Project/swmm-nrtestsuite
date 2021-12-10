@@ -2,9 +2,10 @@
     "name": "Example7-Final",
     "version": "1.0",
     "description": "",
+    "minimum_app_version": "5.2.0",
     "args": [
         "Example7-Final.inp",
-        "Example7-Final.rpt", 
+        "Example7-Final.rpt",
         "Example7-Final.out"
     ],
     "input_files": [

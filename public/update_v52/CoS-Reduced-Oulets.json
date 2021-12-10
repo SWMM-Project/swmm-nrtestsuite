@@ -2,9 +2,10 @@
     "name": "CoS-Reduced-Oulets",
     "version": "1.0",
     "description": "",
+    "minimum_app_version": "5.2.0",
     "args": [
         "CoS-Reduced-Oulets.inp",
-        "CoS-Reduced-Oulets.rpt", 
+        "CoS-Reduced-Oulets.rpt",
         "CoS-Reduced-Oulets.out"
     ],
     "input_files": [

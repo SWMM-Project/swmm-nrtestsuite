@@ -2,9 +2,10 @@
     "name": "Example7-Inlets",
     "version": "1.0",
     "description": "",
+    "minimum_app_version": "5.2.0",
     "args": [
         "Example7-Inlets.inp",
-        "Example7-Inlets.rpt", 
+        "Example7-Inlets.rpt",
         "Example7-Inlets.out"
     ],
     "input_files": [
