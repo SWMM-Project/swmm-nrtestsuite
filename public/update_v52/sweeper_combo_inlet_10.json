@@ -1,0 +1,17 @@
+{
+    "name": "sweeper_combo_inlet_10",
+    "version": "1.0",
+    "description": "",
+    "args": [
+        "sweeper_combo_inlet_10.inp",
+        "sweeper_combo_inlet_10.rpt", 
+        "sweeper_combo_inlet_10.out"
+    ],
+    "input_files": [
+        "sweeper_combo_inlet_10.inp"
+    ],
+    "output_files": {
+        "sweeper_combo_inlet_10.rpt": "swmm report",
+        "sweeper_combo_inlet_10.out": "swmm allclose"
+    }
+}

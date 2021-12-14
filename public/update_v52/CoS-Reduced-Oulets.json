@@ -1,0 +1,17 @@
+{
+    "name": "CoS-Reduced-Oulets",
+    "version": "1.0",
+    "description": "",
+    "args": [
+        "CoS-Reduced-Oulets.inp",
+        "CoS-Reduced-Oulets.rpt", 
+        "CoS-Reduced-Oulets.out"
+    ],
+    "input_files": [
+        "CoS-Reduced-Oulets.inp"
+    ],
+    "output_files": {
+        "CoS-Reduced-Oulets.rpt": "swmm report",
+        "CoS-Reduced-Oulets.out": "swmm allclose"
+    }
+}
