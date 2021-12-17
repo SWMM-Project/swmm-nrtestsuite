@@ -1,9 +1,9 @@
 [TITLE]
 ;;Project Title/Notes
 Parkway project with inlets
-represented with Custom inlets
-using same capture curves as
-CoS-Reduced-Outlets.inp.
+represented as Outlet links
+connected to catch basin
+storage units.
 
 [OPTIONS]
 ;;Option             Value
@@ -555,6 +555,16 @@ S-R4763B-1       100        10         4.1        7          0
 S-R4863-1        100        10         4.1        7          0         
 S-R4863D-1       100        10         4.1        7          0         
 
+[LID_CONTROLS]
+;;Name           Type/Layer Parameters
+;;-------------- ---------- ----------
+LID-Vegswale     VS
+LID-Vegswale     SURFACE    300        0.5        0.03       1.0        5         
+
+[LID_USAGE]
+;;Subcatchment   LID Process      Number  Area       Width      InitSat    FromImp    ToPerv     RptFile                  DrainTo          FromPerv  
+;;-------------- ---------------- ------- ---------- ---------- ---------- ---------- ---------- ------------------------ ---------------- ----------
+
 [JUNCTIONS]
 ;;Name           Elevation  MaxDepth   InitDepth  SurDepth   Aponded   
 ;;-------------- ---------- ---------- ---------- ---------- ----------
@@ -564,25 +574,25 @@ S-R4863D-1       100        10         4.1        7          0
 L3750            489.98     7.32       0          0          100       
 L3850            490.019    7.181      0          0          100       
 ;STS224
-L3852            491.665    4.745      0          0          0         
+L3852            491.665    4.745      0          0          100       
 ;STS225
-L3853            491.777    3.873      0          0          0         
+L3853            491.777    3.873      0          0          100       
 ;STS226
-L3854A           491.858    3.237      0          0          0         
+L3854A           491.858    3.237      0          0          100       
 ;STS228
-L3955            493.203    2.786      0          0          0         
+L3955            493.203    2.786      0          0          100       
 ;STS229
 L4056            493.554    3.007      0          0          100       
 ;STS230
-L4157            493.8      2.73       0          0          0         
+L4157            493.8      2.73       0          0          100       
 ;STS231
 L4258            496        2.506      0          0          100       
 ;STS232
-L4359            496.59     2.475      0          0          0         
+L4359            496.59     2.475      0          0          100       
 ;STS233
 L4560            497.55     2.569      0          0          100       
 ;STS234
-L4662            497.9      2.227      0          0          0         
+L4662            497.9      2.227      0          0          100       
 Node64           472.05     15.95      0          0          500       
 Node66           472        16         0          0          500       
 O3854            495.035    1          0          0          0         
@@ -649,46 +659,46 @@ R4358A           498.500    1.000      0.000      0.000      0.0
 R4358B           498.675    1.000      0.000      0.000      0.0       
 R4358C           498.500    1.000      0.000      0.000      0.0       
 R4358D           498.675    1.000      0.000      0.000      0.0       
-R4359A           498.937    0          0          0          0         
-R4359B           498.854    0          0.000      0.000      0.0       
-R4359D           498.884    0          0.000      0.000      0.0       
-R4359E           498.854    0          0.000      0.000      0.0       
-R4459            498.729    0          0.000      0.000      0.0       
-R4459A           498.69     0          0          0          0         
-R4459B           498.729    0          0.000      0.000      0.0       
-R4459C           498.800    0          0.000      0.000      0.0       
-R4459D           498.729    0          0.000      0.000      0.0       
-R4459E           498.69     0          0          0          0         
-R4459F           498.729    0          0.000      0.000      0.0       
-R4459G           498.804    0          0.000      0.000      0.0       
-R4460            499.021    0          0.000      0.000      0.0       
-R4460A           499.106    0          0.000      0.000      0.0       
-R4460B           499.407    0          0.000      0.000      0.0       
-R4560            499.319    0          0.000      0.000      0.0       
-R4560A           499.678    0          0.000      0.000      0.0       
-R4560B           499.792    0          0.000      0.000      0.0       
-R4560C           499.765    0          0.000      0.000      0.0       
-R4560D           499.879    0          0.000      0.000      0.0       
-R4661A           500.239    0          0          0          0         
-R4661B           499.983    0          0.000      0.000      0.0       
-R4661C           499.922    0          0          0          100       
-R4661D           499.986    0          0.000      0.000      0.0       
-R4661E           500.02     0          0          0          0         
-R4661F           499.895    0          0.000      0.000      0.0       
-R4662            500.080    0          0.000      0.000      0.0       
-R4662A           499.898    0          0.000      0.000      0.0       
-R4662B           499.992    0          0.000      0.000      0.0       
-R4662C           500.336    0          0.000      0.000      0.0       
-R4762            500.420    0          0.000      0.000      0.0       
-R4762A           500.760    0          0.000      0.000      0.0       
-R4762B           501.101    0          0.000      0.000      0.0       
-R4762C           500.756    0          0.000      0.000      0.0       
-R4763            501.384    0          0.000      0.000      0.0       
-R4763A           501.101    0          0.000      0.000      0.0       
-R4763B           501.384    0          0.000      0.000      0.0       
-R4863            501.463    0          0.000      0.000      0.0       
-R4863D           501.463    0          0.000      0.000      0.0       
-R4661G           499.833    0          0          0          400       
+R4359A           498.937    1          0          0          0         
+R4359B           498.854    1.000      0.000      0.000      0.0       
+R4359D           498.884    1.000      0.000      0.000      0.0       
+R4359E           498.854    1.000      0.000      0.000      0.0       
+R4459            498.729    1.000      0.000      0.000      0.0       
+R4459A           498.69     1          0          0          0         
+R4459B           498.729    1.000      0.000      0.000      0.0       
+R4459C           498.800    1.000      0.000      0.000      0.0       
+R4459D           498.729    1.000      0.000      0.000      0.0       
+R4459E           498.69     1          0          0          0         
+R4459F           498.729    1.000      0.000      0.000      0.0       
+R4459G           498.804    1.000      0.000      0.000      0.0       
+R4460            499.021    1.000      0.000      0.000      0.0       
+R4460A           499.106    1.000      0.000      0.000      0.0       
+R4460B           499.407    1.000      0.000      0.000      0.0       
+R4560            499.319    1.000      0.000      0.000      0.0       
+R4560A           499.678    1.000      0.000      0.000      0.0       
+R4560B           499.792    1.000      0.000      0.000      0.0       
+R4560C           499.765    1.000      0.000      0.000      0.0       
+R4560D           499.879    1.000      0.000      0.000      0.0       
+R4661A           500.239    1          0          0          0         
+R4661B           499.983    1.000      0.000      0.000      0.0       
+R4661C           499.922    1          0          0          0         
+R4661D           499.986    1.000      0.000      0.000      0.0       
+R4661E           500.02     1          0          0          0         
+R4661F           499.895    1.000      0.000      0.000      0.0       
+R4661G           499.833    1          0          0          0         
+R4662            500.080    1.000      0.000      0.000      0.0       
+R4662A           499.898    1.000      0.000      0.000      0.0       
+R4662B           499.992    1.000      0.000      0.000      0.0       
+R4662C           500.336    1.000      0.000      0.000      0.0       
+R4762            500.420    1.000      0.000      0.000      0.0       
+R4762A           500.760    1.000      0.000      0.000      0.0       
+R4762B           501.101    1.000      0.000      0.000      0.0       
+R4762C           500.756    1.000      0.000      0.000      0.0       
+R4763            501.384    1.000      0.000      0.000      0.0       
+R4763A           501.101    1.000      0.000      0.000      0.0       
+R4763B           501.384    1.000      0.000      0.000      0.0       
+R4863            501.463    1.000      0.000      0.000      0.0       
+R4863D           501.463    1.000      0.000      0.000      0.0       
 
 [OUTFALLS]
 ;;Name           Elevation  Type       Stage Data       Gated    Route To        
@@ -704,6 +714,38 @@ Node67           470        FREE                        NO
 [STORAGE]
 ;;Name           Elev.    MaxDepth   InitDepth  Shape      Curve Type/Params            SurDepth  Fevap    Psi      Ksat     IMD     
 ;;-------------- -------- ---------- ----------- ---------- ---------------------------- --------- --------          -------- --------
+;CB1309-02
+L3852A           494.91   2.213      0          TABULAR    DummyCB                      100       0       
+;CB1309-03
+L3852B           494.909  2.213      0          TABULAR    DummyCB                      100       0       
+;CB1309-04
+L3853A           494.12   2.213      0          TABULAR    DummyCB                      100       0       
+;CB1309-05
+L3853B           494.141  2.213      0          TABULAR    DummyCB                      100       0       
+;CB1310-05
+L3854B           493.436  2.327      0          TABULAR    DummyCB                      100       0       
+;CB1310-03
+L3854C           493.55   2.312      0          TABULAR    DummyCB                      100       0       
+;CB1310-04
+L3953            493.55   2.312      0          TABULAR    DummyCB                      100       0       
+;CB1310-06
+L3954            493.434  2.328      0          TABULAR    DummyCB                      100       0       
+;CB1310-09
+L4055            494.421  2.304      0          TABULAR    DummyCB                      100       0       
+;CB1310-10
+L4055A           494.391  2.328      0          TABULAR    DummyCB                      100       0       
+;CB1310-13
+L4157A           494.911  2.325      0          TABULAR    DummyCB                      100       0       
+;CB1310-14
+L4157B           494.998  2.325      0          TABULAR    DummyCB                      100       0       
+;CB1311-01
+L4459            497.337  2.328      0          TABULAR    DummyCB                      100       0       
+;CB1311-02
+L4459A           497.338  2.327      0          TABULAR    DummyCB                      100       0       
+;CB1312-02
+L4661            498.599  2.325      0          TABULAR    DummyCB                      100       0       
+;CB1312-01
+L4662A           498.51   2.325      0          TABULAR    DummyCB                      100       0       
 O3854A           494.075  1.004      0          TABULAR    CentralDryPond_Overflow      0         0       
 
 [CONDUITS]
@@ -714,15 +756,31 @@ O3854A           494.075  1.004      0          TABULAR    CentralDryPond_Overfl
 C1               O3854A           L3854A           11.3       0.013      494.075    493.332    0          0         
 L3850            L3850            L3750            20         0.013      490.019    489.98     0          0         
 L3852            L3852            L3750            120.64     0.013      491.665    490.6      0          0         
+L3852A           L3852A           L3852            5          0.013      494.91     494        0          0         
+L3852B           L3852B           L3852            23         0.013      494.909    494        0          0         
 L3853            L3853            L3852            92.3       0.013      491.777    491.665    0          0         
+L3853A           L3853A           L3853            5          0.013      494.12     493.8      0          0         
+L3853B           L3853B           L3853            23         0.013      494.141    493.61     0          0         
 L3854A           L3854A           L3853            67.23      0.013      491.858    491.777    0          0         
+L3854B           L3854B           L3854A           10.93      0.013      493.436    492.395    0          0         
+L3854C           L3854C           L3854A           9.34       0.013      493.55     491.858    0          0         
+L3953            L3953            L3854A           25.11      0.013      493.55     493.142    0          0         
+L3954            L3954            L3854A           25.72      0.013      493.434    492.395    0          0         
 L3955            L3955            L3854A           127.69     0.013      493.203    492.008    0          0         
+L4055            L4055            L3955            5          0.013      494.421    493.132    0          0         
+L4055A           L4055A           L3955            26.5       0.013      494.391    493.132    0          0         
 L4056            L4056            L3955            93.2       0.013      493.554    493.203    0          0         
 L4157            L4157            L4056            72.2       0.013      493.8      493.554    0          0         
+L4157A           L4157A           L4157            5          0.013      494.911    493.96     0          0         
+L4157B           L4157B           L4157            26.8       0.013      494.998    493.96     0          0         
 L4258            L4258            L4157            120        0.013      496        494.025    0          0         
 L4359            L4359            L4258            113.8      0.013      496.59     496        0          0         
+L4459            L4459            L4359            6.9        0.013      497.337    496.699    0          0         
+L4459A           L4459A           L4359            26.8       0.013      497.338    496.699    0          0         
 L4560            L4560            L4359            120        0.013      497.55     496.74     0          0         
+L4661            L4661            L4662            26.8       0.013      498.599    498.11     0          0         
 L4662            L4662            L4560            109.2      0.013      497.9      497.55     0          0         
+L4662A           L4662A           L4662            5          0.013      498.51     498.11     0          0         
 Link92           34161            Node64           71.68      0.013      474        472.8      0          0         
 Link93           Node64           Node66           10.35      0.03       472.05     472        0          0         
 Link94           Node66           Node67           10         0.03       472        470        0          0         
@@ -831,6 +889,26 @@ RSpill_R4359D    R4359D           D4359A           31.87      0.016      498.884
 RSpill_R4661A    R4661A           D4661A           26.58      0.016      500.239    498.993    0          0         
 RSpill_R4661E    R4661E           D4561C           30.13      0.016      500.02     499.388    0          0         
 
+[OUTLETS]
+;;Name           From Node        To Node          Offset     Type            QTable/Qcoeff    Qexpon     Gated   
+;;-------------- ---------------- ---------------- ---------- --------------- ---------------- ---------- --------
+OL-R3852         R3852            L3852B           496.13     TABULAR/HEAD    1CB-1.00%                   NO      
+OL-R3852C        R3852C           L3852A           496.13     TABULAR/HEAD    1CB-1.00%                   NO      
+OL-R3853         R3853            L3853B           495.365    TABULAR/HEAD    2CB-0.75%                   NO      
+OL-R3853B        R3853B           L3853A           495.365    TABULAR/HEAD    2CB-0.75%                   NO      
+OL-R3854         R3854            L3854C           494.897    TABULAR/HEAD    2CB-0.50%                   NO      
+OL-R3953         R3953            L3953            494.897    TABULAR/HEAD    2CB-0.50%                   NO      
+OL-R3954         R3954            L3954            494.776    TABULAR/HEAD    SAG-2-Curb&Gut              NO      
+OL-R3954D        R3954D           L3854B           494.776    TABULAR/HEAD    SAG-2-Curb&Gut              NO      
+OL-R4055         R4055            L4055A           495.737    TABULAR/HEAD    2CB-0.75%                   NO      
+OL-R4055B        R4055B           L4055            495.825    TABULAR/HEAD    2CB-0.75%                   NO      
+OL-R4157A        R4157A           L4157B           496.324    TABULAR/HEAD    SAG-2-Curb&Gut              NO      
+OL-R4157D        R4157D           L4157A           496.237    TABULAR/HEAD    SAG-2-Curb&Gut              NO      
+OL-R4459A        R4459A           L4459A           498.679    TABULAR/HEAD    SAG-2-Curb&Gut              NO      
+OL-R4459E        R4459E           L4459            498.679    TABULAR/HEAD    SAG-2-Curb&Gut              NO      
+OL-R4661C        R4661C           L4661            499.922    TABULAR/HEAD    SAG-2-Curb&Gut              NO      
+OL-R4661G        R4661G           L4662A           499.833    TABULAR/HEAD    SAG-2-Curb&Gut              NO      
+
 [XSECTIONS]
 ;;Link           Shape        Geom1            Geom2      Geom3      Geom4      Barrels    Culvert   
 ;;-------------- ------------ ---------------- ---------- ---------- ---------- ---------- ----------
@@ -839,15 +917,31 @@ RSpill_R4661E    R4661E           D4561C           30.13      0.016      500.02 
 C1               CIRCULAR     0.6              0          0          0          1                    
 L3850            CIRCULAR     1.5              0          0          0          1                    
 L3852            CIRCULAR     0.9              0          0          0          1                    
+L3852A           CIRCULAR     0.3              0          0          0          1                    
+L3852B           CIRCULAR     0.3              0          0          0          1                    
 L3853            CIRCULAR     0.9              0          0          0          1                    
+L3853A           CIRCULAR     0.3              0          0          0          1                    
+L3853B           CIRCULAR     0.3              0          0          0          1                    
 L3854A           CIRCULAR     0.9              0          0          0          1                    
+L3854B           CIRCULAR     0.3              0          0          0          1                    
+L3854C           CIRCULAR     0.3              0          0          0          1                    
+L3953            CIRCULAR     0.3              0          0          0          1                    
+L3954            CIRCULAR     0.3              0          0          0          1                    
 L3955            CIRCULAR     0.75             0          0          0          1                    
+L4055            CIRCULAR     0.3              0          0          0          1                    
+L4055A           CIRCULAR     0.3              0          0          0          1                    
 L4056            CIRCULAR     0.75             0          0          0          1                    
 L4157            CIRCULAR     0.75             0          0          0          1                    
+L4157A           CIRCULAR     0.3              0          0          0          1                    
+L4157B           CIRCULAR     0.3              0          0          0          1                    
 L4258            CIRCULAR     0.525            0          0          0          1                    
 L4359            CIRCULAR     0.525            0          0          0          1                    
+L4459            CIRCULAR     0.3              0          0          0          1                    
+L4459A           CIRCULAR     0.3              0          0          0          1                    
 L4560            CIRCULAR     0.375            0          0          0          1                    
+L4661            CIRCULAR     0.3              0          0          0          1                    
 L4662            CIRCULAR     0.375            0          0          0          1                    
+L4662A           CIRCULAR     0.3              0          0          0          1                    
 Link92           CIRCULAR     1.5              0          0          0          1                    
 Link93           TRAPEZOIDAL  1                3.6        3          3          1                    
 Link94           TRAPEZOIDAL  1                5.5        3          3          1                    
@@ -855,111 +949,111 @@ O3854            TRAPEZOIDAL  1                3          10         10         
 O3954A           TRAPEZOIDAL  1                3          10         10         1                    
 O3954B           TRAPEZOIDAL  1                3          10         10         1                    
 O3954D           TRAPEZOIDAL  1                3          10         10         1                    
-R3750            STREET       Road            
-R3750A           STREET       Road            
-R3750B           STREET       Road            
-R3850            STREET       Road            
-R3850A           STREET       Road            
-R3850B           STREET       Road            
-R3851            STREET       Road            
-R3851A           STREET       Road            
-R3851B           STREET       Road            
-R3851C           STREET       Road            
-R3852            STREET       Road            
-R3852A           STREET       Road            
-R3852B           STREET       Road            
-R3852C           STREET       Road            
-R3852D           STREET       Road            
-R3852E           STREET       Road            
-R3853            STREET       Road            
-R3853A           STREET       Road            
-R3853B           STREET       Road            
-R3853C           STREET       Road            
-R3854            STREET       Road            
-R3953            STREET       Road            
-R3954A           STREET       Road            
-R3954B           STREET       Road            
-R3954C           STREET       Road            
-R3954E           STREET       Road            
-R3954F           STREET       Road            
-R3954G           STREET       Road            
-R3955            STREET       Road            
-R3955A           STREET       Road            
-R4055            STREET       Road            
-R4055A           STREET       Road            
-R4055B           STREET       Road            
-R4055C           STREET       Road            
-R4056            STREET       Road            
-R4056A           STREET       Road            
-R4056B           STREET       Road            
-R4056C           STREET       Road            
-R4156            STREET       Road            
-R4156C           STREET       Road            
-R4156D           STREET       Road            
-R4156G           STREET       Road            
-R4157            STREET       Road            
-R4157B           STREET       Road            
-R4157C           STREET       Road            
-R4157E           STREET       Road            
-R4157F           STREET       Road            
-R4257            STREET       Road            
-R4257A           STREET       Road            
-R4257B           STREET       Road            
-R4257C           STREET       Road            
-R4258            STREET       Road            
-R4258A           STREET       Road            
-R4358            STREET       Road            
-R4358A           STREET       Road            
-R4358B           STREET       Road            
-R4358C           STREET       Road            
-R4358D           STREET       Road            
-R4359A           STREET       Road            
-R4359B           STREET       Road            
-R4359D           STREET       Road            
-R4359E           STREET       Road            
-R4459            STREET       Road            
-R4459B           STREET       Road            
-R4459C           STREET       Road            
-R4459D           STREET       Road            
-R4459F           STREET       Road            
-R4459G           STREET       Road            
-R4460            STREET       Road            
-R4460A           STREET       Road            
-R4460B           STREET       Road            
-R4560            STREET       Road            
-R4560A           STREET       Road            
-R4560B           STREET       Road            
-R4560C           STREET       Road            
-R4560D           STREET       Road            
-R4661A           STREET       Road            
-R4661B           STREET       Road            
-R4661D           STREET       Road            
-R4661E           STREET       Road            
-R4661F           STREET       Road            
-R4662            STREET       Road            
-R4662A           STREET       Road            
-R4662B           STREET       Road            
-R4662C           STREET       Road            
-R4762            STREET       Road            
-R4762A           STREET       Road            
-R4762B           STREET       Road            
-R4762C           STREET       Road            
-R4763            STREET       Road            
-R4763A           STREET       Road            
-R4763B           STREET       Road            
-R4863            STREET       Road            
-R4863D           STREET       Road            
-RSpill_R4156C    STREET       Road            
-RSpill_R4156G    STREET       Road            
-RSpill_R4359A    STREET       Road            
-RSpill_R4359D    STREET       Road            
-RSpill_R4661A    STREET       Road            
-RSpill_R4661E    STREET       Road            
+R3750            IRREGULAR    Roadway         
+R3750A           IRREGULAR    Roadway         
+R3750B           IRREGULAR    Roadway         
+R3850            IRREGULAR    Roadway         
+R3850A           IRREGULAR    Roadway         
+R3850B           IRREGULAR    Roadway         
+R3851            IRREGULAR    Roadway         
+R3851A           IRREGULAR    Roadway         
+R3851B           IRREGULAR    Roadway         
+R3851C           IRREGULAR    Roadway         
+R3852            IRREGULAR    Roadway         
+R3852A           IRREGULAR    Roadway         
+R3852B           IRREGULAR    Roadway         
+R3852C           IRREGULAR    Roadway         
+R3852D           IRREGULAR    Roadway         
+R3852E           IRREGULAR    Roadway         
+R3853            IRREGULAR    Roadway         
+R3853A           IRREGULAR    Roadway         
+R3853B           IRREGULAR    Roadway         
+R3853C           IRREGULAR    Roadway         
+R3854            IRREGULAR    Roadway         
+R3953            IRREGULAR    Roadway         
+R3954A           IRREGULAR    Roadway         
+R3954B           IRREGULAR    Roadway         
+R3954C           IRREGULAR    Roadway         
+R3954E           IRREGULAR    Roadway         
+R3954F           IRREGULAR    Roadway         
+R3954G           IRREGULAR    Roadway         
+R3955            IRREGULAR    Roadway         
+R3955A           IRREGULAR    Roadway         
+R4055            IRREGULAR    Roadway         
+R4055A           IRREGULAR    Roadway         
+R4055B           IRREGULAR    Roadway         
+R4055C           IRREGULAR    Roadway         
+R4056            IRREGULAR    Roadway         
+R4056A           IRREGULAR    Roadway         
+R4056B           IRREGULAR    Roadway         
+R4056C           IRREGULAR    Roadway         
+R4156            IRREGULAR    Roadway         
+R4156C           IRREGULAR    Roadway         
+R4156D           IRREGULAR    Roadway         
+R4156G           IRREGULAR    Roadway         
+R4157            IRREGULAR    Roadway         
+R4157B           IRREGULAR    Roadway         
+R4157C           IRREGULAR    Roadway         
+R4157E           IRREGULAR    Roadway         
+R4157F           IRREGULAR    Roadway         
+R4257            IRREGULAR    Roadway         
+R4257A           IRREGULAR    Roadway         
+R4257B           IRREGULAR    Roadway         
+R4257C           IRREGULAR    Roadway         
+R4258            IRREGULAR    Roadway         
+R4258A           IRREGULAR    Roadway         
+R4358            IRREGULAR    Roadway         
+R4358A           IRREGULAR    Roadway         
+R4358B           IRREGULAR    Roadway         
+R4358C           IRREGULAR    Roadway         
+R4358D           IRREGULAR    Roadway         
+R4359A           IRREGULAR    Roadway         
+R4359B           IRREGULAR    Roadway         
+R4359D           IRREGULAR    Roadway         
+R4359E           IRREGULAR    Roadway         
+R4459            IRREGULAR    Roadway         
+R4459B           IRREGULAR    Roadway         
+R4459C           IRREGULAR    Roadway         
+R4459D           IRREGULAR    Roadway         
+R4459F           IRREGULAR    Roadway         
+R4459G           IRREGULAR    Roadway         
+R4460            IRREGULAR    Roadway         
+R4460A           IRREGULAR    Roadway         
+R4460B           IRREGULAR    Roadway         
+R4560            IRREGULAR    Roadway         
+R4560A           IRREGULAR    Roadway         
+R4560B           IRREGULAR    Roadway         
+R4560C           IRREGULAR    Roadway         
+R4560D           IRREGULAR    Roadway         
+R4661A           IRREGULAR    Roadway         
+R4661B           IRREGULAR    Roadway         
+R4661D           IRREGULAR    Roadway         
+R4661E           IRREGULAR    Roadway         
+R4661F           IRREGULAR    Roadway         
+R4662            IRREGULAR    Roadway         
+R4662A           IRREGULAR    Roadway         
+R4662B           IRREGULAR    Roadway         
+R4662C           IRREGULAR    Roadway         
+R4762            IRREGULAR    Roadway         
+R4762A           IRREGULAR    Roadway         
+R4762B           IRREGULAR    Roadway         
+R4762C           IRREGULAR    Roadway         
+R4763            IRREGULAR    Roadway         
+R4763A           IRREGULAR    Roadway         
+R4763B           IRREGULAR    Roadway         
+R4863            IRREGULAR    Roadway         
+R4863D           IRREGULAR    Roadway         
+RSpill_R4156C    IRREGULAR    Roadway         
+RSpill_R4156G    IRREGULAR    Roadway         
+RSpill_R4359A    IRREGULAR    Roadway         
+RSpill_R4359D    IRREGULAR    Roadway         
+RSpill_R4661A    IRREGULAR    Roadway         
+RSpill_R4661E    IRREGULAR    Roadway         
 
 [STREETS]
 ;;Name           Tcrown   Hcurb    Sroad    nRoad    Hdep     Wdep     Sides    Wback    Sback    nBack   
 ;;-------------- -------- -------- -------- -------- -------- -------- -------- -------- -------- --------
-Road             7.7      0.2      2.5      0.016    0        0        1        7.4      5.66     0.03    
+Road             7.7      0.2      2.5      0.016    0        0        1        7.4      5.66     0.016   
 
 [INLETS]
 ;;Name           Type             Parameters:
@@ -972,22 +1066,55 @@ SAG-2            CUSTOM           SAG-2-Curb&Gut
 [INLET_USAGE]
 ;;Conduit        Inlet_Type       Inlet_Node       #Inlets   %Clogged  MaxFlow   Local_Depression
 ;;-------------- ---------------- ---------------- --------- --------- --------- --------- ---------
-R3851A           1CB-1            L3852            1         0         0         0         0        
-R3851C           1CB-1            L3852            1         0         0         0         0        
-R3852B           2CB-75           L3853            1         0         0         0         0        
-R3852E           2CB-75           L3853            1         0         0         0         0        
-R3853A           2CB-50           L3854A           1         0         0         0         0         ON_SAG   
-R3853C           2CB-50           L3854A           1         0         0         0         0         ON_SAG   
-R3954A           SAG-2            L3854A           1         0         0         0         0         ON_SAG   
-R3954E           SAG-2            L3854A           1         0         0         0         0         ON_SAG   
-R4055A           2CB-75           L3955            1         0         0         0         0        
-R4055C           2CB-75           L3955            1         0         0         0         0        
-R4157B           SAG-2            L4157            1         0         0         0         0        
-R4157E           SAG-2            L4157            1         0         0         0         0        
-R4459B           SAG-2            L4359            1         0         0         0         0        
-R4459F           SAG-2            L4359            1         0         0         0         0        
-R4661D           SAG-2            L4662            1         0         0         0         0        
-R4662A           SAG-2            L4662            1         0         0         0         0        
+
+[TRANSECTS]
+;;Transect Data in HEC-2 format
+;
+NC 0.05     0.05     0.03    
+X1 NES_SouthConnection  7        -10      10       0.0      0.0      0.0      0.0      0.0     
+GR 10       -21      0.5      -20      0        -10      0        0        0        10      
+GR 0.5      20       10       21      
+;
+NC 0.03     0.03     0.016   
+X1 Roadway           4        7.4      15.1     0.0      0.0      0.0      0.0      0.0     
+GR .61884   0        .2       7.4      0        7.4      .1925    15.1    
+;
+NC 0.016    0.016    0.016   
+X1 Sidewalk_EB       4        0.0      0.0      0.0      0.0      0.0      0.0      0.0     
+GR 1        -0.1     0        0        0.035    3.5      1        3.6     
+;
+NC 0.016    0.016    0.016   
+X1 Sidewalk_WB       4        0.0      0.0      0.0      0.0      0.0      0.0      0.0     
+GR 1        -0.1     0        0        0.02     2        1        2.1     
+;
+NC 0.016    0.016    0.016   
+X1 Township380_Xing  10       0.0      0.0      0.0      0.0      0.0      0.0      0.0     
+GR 490.94   -35.4    488.94   -34.4    488.647  -26.1    488.543  -18.4    488.469  -9.7    
+GR 488.385  0        488.448  9.5      488.535  18.1     488.756  29       490.756  30      
+;
+NC 0.025    0.025    0.035   
+X1 UH2               8        20       30       0.0      0.0      0        0        0       
+GR 1        0        0.5      1        0.5      20       0        22.5     0        27.5    
+GR 0.5      30       0.5      49       1        50      
+;
+NC 0.035    0.035    0.035   
+X1 UH2-SHeet         4        1        199      0.0      0.0      0        0        0       
+GR 0.5      0        0        1        0        199      0.5      200     
+;
+NC 0.03     0.03     0.03    
+X1 WestDryPondNarrow  8        0.0      0.0      0.0      0.0      0.0      0.0      0.0     
+GR 5        -50      0.7      -28.5    0.5      -3.5     0        -1       0        1       
+GR 0.5      3.5      0.7      28.5     5        50      
+;
+NC 0.03     0.03     0.03    
+X1 WestDryPondWide   9        0.0      0.0      0.0      0.0      0.0      0.0      0.0     
+GR 6        -71.5    1.7      -53.5    0.5      -3.5     0        -1       0        0       
+GR 0        1        0.5      3.5      1.7      53.5     6        71.5    
+;
+NC 0.03     0.03     0.03    
+X1 WESTPOND_Weir     9        0.0      0.0      0.0      0.0      0.0      0.0      0.0     
+GR 4.05     -40      1.8      -28.75   1.8      -10.5    0        -1.5     0        0       
+GR 0        1.5      1.8      10.5     1.8      28.75    4.05     40      
 
 [CURVES]
 ;;Name           Type       X-Value    Y-Value   
@@ -2841,8 +2968,161 @@ SAG-3-Curb&Gut              1.1900     0.8719
 SAG-3-Curb&Gut              1.2000     0.8755    
 SAG-3-Curb&Gut              1.2100     0.8792    
 ;
+;bottom elev= 494.100
+CentralDryPond(New) Storage    0          0         
+CentralDryPond(New)            0.25       676.436   
+CentralDryPond(New)            0.5        2500.585  
+CentralDryPond(New)            0.75       4318.193  
+CentralDryPond(New)            1.0        5107.871  
+CentralDryPond(New)            1.25       5528.582  
+CentralDryPond(New)            1.5        5962.228  
+CentralDryPond(New)            1.75       6408.084  
+CentralDryPond(New)            2.00       6884.845  
+;
+CentralDryPond(OLD) Storage    0          0         
+CentralDryPond(OLD)            0.25       685       
+CentralDryPond(OLD)            0.5        2730      
+CentralDryPond(OLD)            0.75       4640      
+CentralDryPond(OLD)            1.0        5140      
+CentralDryPond(OLD)            1.25       5530      
+CentralDryPond(OLD)            1.5        5940      
+CentralDryPond(OLD)            1.75       6350      
+CentralDryPond(OLD)            2.0        6780      
+;
 CentralDryPond_Overflow Storage    0          11.142    
 CentralDryPond_Overflow            1          261.061   
+;
+CentralGravelPitPond Storage    0          3540      
+CentralGravelPitPond            1.2        5885      
+CentralGravelPitPond            2.2        8180      
+;
+CentralWetland   Storage    0          765       
+CentralWetland              1.2        2050      
+CentralWetland              2.2        3465      
+;
+CentralWetlandLarger Storage    0          2365      
+CentralWetlandLarger            1.2        4734      
+CentralWetlandLarger            1.5        6700      
+CentralWetlandLarger            2.5        10190     
+;
+DummyCB          Storage    0          0.64      
+DummyCB                     10         0.64      
+;
+NES_North1       Storage    0          10000     
+NES_North1                  1          769060    
+NES_North1                  2          852120    
+NES_North1                  3          989320    
+NES_North1                  4          1154860   
+NES_North1                  5          1341010   
+NES_North1                  6          1876800   
+;
+NES_South1       Storage    0          100       
+NES_South1                  1          6585      
+NES_South1                  1.5        14569     
+NES_South1                  2          22176     
+NES_South1                  2.5        32513     
+NES_South1                  2.75       38197     
+NES_South1                  3          45998     
+NES_South1                  3.5        75566     
+;
+NES_South2       Storage    0          1000      
+NES_South2                  0.75       2077      
+NES_South2                  1          62938     
+NES_South2                  1.5        86290     
+NES_South2                  2          127195    
+NES_South2                  2.5        157166    
+NES_South2                  2.75       174275    
+NES_South2                  3          191132    
+NES_South2                  3.5        233873    
+;
+NES_South3       Storage    0          10000     
+NES_South3                  1          10000     
+NES_South3                  1.5        56764     
+NES_South3                  2          243708    
+NES_South3                  2.5        339436    
+NES_South3                  2.75       376147    
+NES_South3                  3          409712    
+NES_South3                  3.5        470030    
+;
+Node33_ST        Storage    0          40000     
+Node33_ST                   2          40000     
+;
+Node45_ST        Storage    0          600       
+Node45_ST                   2          1200      
+;
+Node48_ST        Storage    0          2000      
+Node48_ST                   3          6000      
+;
+Node56_ST        Storage    0          20000     
+Node56_ST                   2          20000     
+;
+Node64_ST        Storage    0          1200      
+Node64_ST                   2          6000      
+;
+PondDamper       Storage    0          10        
+PondDamper                  2          10        
+;
+Pond-SmallSwale-East Storage    0          158.6     
+Pond-SmallSwale-East            1.8        1091.9    
+Pond-SmallSwale-East            2.4        1477.8    
+;
+Pond-SmallSwale-EastSedi Storage    0          79.6      
+Pond-SmallSwale-EastSedi            1.8        809.9     
+Pond-SmallSwale-EastSedi            2.4        1128.1    
+;
+SRMH236_ST       Storage    0          0.1       
+SRMH236_ST                  1.8        0.1       
+SRMH236_ST                  1.81       12000     
+SRMH236_ST                  10         12000     
+;
+Storage_Node22   Storage    0          2         
+Storage_Node22              5.344      2         
+Storage_Node22              5.5        1000      
+Storage_Node22              100        1000      
+;
+Storage_Node24   Storage    0          2         
+Storage_Node24              5.738      2         
+Storage_Node24              6          1000      
+Storage_Node24              100        1000      
+;
+Storage_Node26   Storage    0          2         
+Storage_Node26              4.152      2         
+Storage_Node26              4.5        1000      
+Storage_Node26              100        1000      
+;
+Storage_Node29   Storage    0          2         
+Storage_Node29              4.773      2         
+Storage_Node29              5          1000      
+Storage_Node29              100        1000      
+;
+VolumeTest       Storage    0          100       
+VolumeTest                  100        100       
+;
+;30m storage element buffer
+WestDryPond      Storage    0          60        
+WestDryPond                 0.5        210       
+WestDryPond                 0.7        1710      
+WestDryPond                 5          3000      
+;
+WESTPOND_ONLY    Storage    0          6969      
+WESTPOND_ONLY               2          11071     
+WESTPOND_ONLY               2.5        12840     
+WESTPOND_ONLY               3          14688     
+WESTPOND_ONLY               4.3        17430     
+WESTPOND_ONLY               4.8        18531     
+WESTPOND_ONLY               6.8        31469     
+;
+WESTPOND_ST      Storage    0          8220      
+WESTPOND_ST                 0.5        8908      
+WESTPOND_ST                 1          9611      
+WESTPOND_ST                 1.5        21497     
+WESTPOND_ST                 2          37913     
+WESTPOND_ST                 2.5        62488     
+WESTPOND_ST                 3          67247     
+WESTPOND_ST                 3.5        72083     
+WESTPOND_ST                 4.3        81075     
+WESTPOND_ST                 4.5        82035     
+WESTPOND_ST                 4.8        84867     
 
 [TIMESERIES]
 ;;Name           Date       Time       Value     
@@ -3547,6 +3827,7 @@ R4661C           391258.923         5782327.448
 R4661D           391265.428         5782333.919       
 R4661E           391227.003         5782309.801       
 R4661F           391244.727         5782327.432       
+R4661G           391251.871         5782334.538       
 R4662            391273.634         5782342.082       
 R4662A           391258.375         5782341.009       
 R4662B           391266.582         5782349.172       
@@ -3560,7 +3841,6 @@ R4763A           391330.388         5782412.644
 R4763B           391347.497         5782429.664       
 R4863            391368.647         5782436.597       
 R4863D           391361.594         5782443.687       
-R4661G           391251.871         5782334.538       
 D4156A           390920.883         5781952.122       
 D4157B           390872.380         5781995.179       
 D4359A           391030.512         5782154.389       
@@ -3568,6 +3848,22 @@ D4458A           391076.127         5782107.907
 D4561C           391202.453         5782320.657       
 D4661A           391245.075         5782280.698       
 Node67           390361.000         5781570.000       
+L3852A           390666.668         5781647.080       
+L3852B           390686.572         5781642.610       
+L3853A           390694.725         5781734.395       
+L3853B           390713.508         5781726.434       
+L3854B           390729.107         5781801.299       
+L3854C           390719.422         5781784.760       
+L3953            390737.217         5781774.784       
+L3954            390746.515         5781790.662       
+L4055            390802.089         5781894.429       
+L4055A           390819.064         5781877.605       
+L4157A           390917.474         5782014.165       
+L4157B           390934.329         5781997.221       
+L4459            391085.694         5782176.566       
+L4459A           391100.081         5782162.103       
+L4661            391262.590         5782323.762       
+L4662A           391245.735         5782340.706       
 O3854A           390714.074         5781800.665       
 
 [VERTICES]
