@@ -1,0 +1,18 @@
+{
+    "name": "Type5_Pump_Test",
+    "version": "1.0",
+    "description": "",
+    "minimum_app_version": "5.2.0",
+    "args": [
+        "Type5_Pump_Test.inp",
+        "Type5_Pump_Test.rpt",
+        "Type5_Pump_Test.out"
+    ],
+    "input_files": [
+        "Type5_Pump_Test.inp"
+    ],
+    "output_files": {
+        "Type5_Pump_Test.rpt": "swmm report",
+        "Type5_Pump_Test.out": "swmm allclose"
+    }
+}

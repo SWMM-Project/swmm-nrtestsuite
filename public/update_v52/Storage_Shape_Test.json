@@ -1,0 +1,18 @@
+{
+    "name": "Storage_Shape_Test",
+    "version": "1.0",
+    "description": "",
+    "minimum_app_version": "5.2.0",
+    "args": [
+        "Storage_Shape_Test.inp",
+        "Storage_Shape_Test.rpt",
+        "Storage_Shape_Test.out"
+    ],
+    "input_files": [
+        "Storage_Shape_Test.inp"
+    ],
+    "output_files": {
+        "Storage_Shape_Test.rpt": "swmm report",
+        "Storage_Shape_Test.out": "swmm allclose"
+    }
+}

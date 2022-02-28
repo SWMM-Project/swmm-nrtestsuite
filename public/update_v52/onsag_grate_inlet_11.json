@@ -1,0 +1,18 @@
+{
+    "name": "onsag_grate_inlet_11",
+    "version": "1.0",
+    "description": "",
+    "minimum_app_version": "5.2.0",
+    "args": [
+        "onsag_grate_inlet_11.inp",
+        "onsag_grate_inlet_11.rpt",
+        "onsag_grate_inlet_11.out"
+    ],
+    "input_files": [
+        "onsag_grate_inlet_11.inp"
+    ],
+    "output_files": {
+        "onsag_grate_inlet_11.rpt": "swmm report",
+        "onsag_grate_inlet_11.out": "swmm allclose"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "control_rules_test",
+    "version": "1.0",
+    "description": "",
+    "minimum_app_version": "5.2.0",
+    "args": [
+        "control_rules_test.inp",
+        "control_rules_test.rpt",
+        "control_rules_test.out"
+    ],
+    "input_files": [
+        "control_rules_test.inp"
+    ],
+    "output_files": {
+        "control_rules_test.rpt": "swmm report",
+        "control_rules_test.out": "swmm allclose"
+    }
+}

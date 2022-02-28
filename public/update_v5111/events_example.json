@@ -2,6 +2,7 @@
     "name": "events_example",
     "version": "1.0",
     "description": "",
+    "minimum_app_version": "5.1.11",
     "args": [
         "events_example.inp",
         "events_example.rpt",

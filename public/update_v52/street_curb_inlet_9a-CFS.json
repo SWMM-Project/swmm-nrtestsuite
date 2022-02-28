@@ -1,0 +1,18 @@
+{
+    "name": "street_curb_inlet_9a-CFS",
+    "version": "1.0",
+    "description": "",
+    "minimum_app_version": "5.2.0",
+    "args": [
+        "street_curb_inlet_9a-CFS.inp",
+        "street_curb_inlet_9a-CFS.rpt",
+        "street_curb_inlet_9a-CFS.out"
+    ],
+    "input_files": [
+        "street_curb_inlet_9a-CFS.inp"
+    ],
+    "output_files": {
+        "street_curb_inlet_9a-CFS.rpt": "swmm report",
+        "street_curb_inlet_9a-CFS.out": "swmm allclose"
+    }
+}

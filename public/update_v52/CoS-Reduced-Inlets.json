@@ -1,0 +1,18 @@
+{
+    "name": "CoS-Reduced-Inlets",
+    "version": "1.0",
+    "description": "",
+    "minimum_app_version": "5.2.0",
+    "args": [
+        "CoS-Reduced-Inlets.inp",
+        "CoS-Reduced-Inlets.rpt",
+        "CoS-Reduced-Inlets.out"
+    ],
+    "input_files": [
+        "CoS-Reduced-Inlets.inp"
+    ],
+    "output_files": {
+        "CoS-Reduced-Inlets.rpt": "swmm report",
+        "CoS-Reduced-Inlets.out": "swmm allclose"
+    }
+}

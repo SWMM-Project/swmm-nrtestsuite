@@ -2,16 +2,17 @@
     "name": "rain_garden",
     "version": "1.0",
     "description": "Rain garden low impact development stormwater control",
+    "minimum_app_version": "5.1.11",
     "args": [
         "rain_garden.inp",
-        "rain_garden.rpt", 
+        "rain_garden.rpt",
         "rain_garden.out"
     ],
     "input_files": [
         "rain_garden.inp"
     ],
     "output_files": {
-        "rain_garden.rpt": "swmm report", 
+        "rain_garden.rpt": "swmm report",
         "rain_garden.out": "swmm allclose",
         "bc_srg.txt": "null"
     }

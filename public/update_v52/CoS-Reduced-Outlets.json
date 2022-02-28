@@ -1,0 +1,18 @@
+{
+    "name": "CoS-Reduced-Outlets",
+    "version": "1.0",
+    "description": "",
+    "minimum_app_version": "5.2.0",
+    "args": [
+        "CoS-Reduced-Outlets.inp",
+        "CoS-Reduced-Outlets.rpt",
+        "CoS-Reduced-Outlets.out"
+    ],
+    "input_files": [
+        "CoS-Reduced-Outlets.inp"
+    ],
+    "output_files": {
+        "CoS-Reduced-Outlets.rpt": "swmm report",
+        "CoS-Reduced-Outlets.out": "swmm allclose"
+    }
+}
